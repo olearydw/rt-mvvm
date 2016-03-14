@@ -9,7 +9,14 @@
         Title="MainWindow" Height="350" Width="525">
     
     <Grid>
-        <esri:MapView x:Name="MyMapView" Map="{Binding IncidentMap}"></esri:MapView>
+        <esri:MapView x:Name="MyMapView" Map="{Binding IncidentMap}">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="ExtentChanged">
+                    <interactivity:InvokeCommandAction Command="{Binding ExtentChangedCommand}"
+                                                       CommandParameter="{Binding ElementName=MyMapView}" />
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+        </esri:MapView>
         <Button Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Bottom" 
                 Content="Toggle" Command="{Binding ToggleLayerCommand}" CommandParameter="Incidents" />
         <TextBlock Height="30" Width="Auto" 

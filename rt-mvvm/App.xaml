@@ -7,12 +7,7 @@
     <Application.Resources>
         <esri:Map x:Key="IncidentMap">
 
-            <interactivity:Interaction.Triggers>
-                <interactivity:EventTrigger EventName="ExtentChanged">
-                    <interactivity:InvokeCommandAction Command="{Binding ExtentChangedCommand}"
-                                                       CommandParameter="{Binding ElementName=MyMapView}" />
-                </interactivity:EventTrigger>
-            </interactivity:Interaction.Triggers>
+            
             
             <esri:Map.InitialViewpoint>
                 <esri:ViewpointExtent XMin="-1631122.453"  YMin="4253523.549" XMax="4163264.136"  YMax="8976345.495" />
