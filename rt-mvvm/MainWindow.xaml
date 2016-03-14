@@ -6,7 +6,7 @@
         xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"
         xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="650" Width="925">
     
     <Grid>
         <esri:MapView x:Name="MyMapView" Map="{Binding IncidentMap}">

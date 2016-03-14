@@ -7,7 +7,11 @@
     <Application.Resources>
         <esri:Map x:Key="IncidentMap">
             <esri:Map.InitialViewpoint>
-                <esri:ViewpointExtent XMin="-1631122.453"  YMin="4253523.549" XMax="4163264.136"  YMax="8976345.495" />
+                <esri:ViewpointExtent 
+                    XMin="-18838168.87"  
+                    YMin="11610.93" 
+                    XMax="-3914454.75"  
+                    YMax="10103906.82" />
             </esri:Map.InitialViewpoint>
             <esri:ArcGISTiledMapServiceLayer ID="BaseMap" ServiceUri="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"/>
             <esri:FeatureLayer ID="Incidents">
