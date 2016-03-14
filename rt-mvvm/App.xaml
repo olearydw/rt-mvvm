@@ -6,9 +6,6 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <esri:Map x:Key="IncidentMap">
-
-            
-            
             <esri:Map.InitialViewpoint>
                 <esri:ViewpointExtent XMin="-1631122.453"  YMin="4253523.549" XMax="4163264.136"  YMax="8976345.495" />
             </esri:Map.InitialViewpoint>
